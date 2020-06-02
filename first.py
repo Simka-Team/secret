@@ -2,21 +2,21 @@ print("Эта программа шифрует по ОДНОЙ букве на 
 print("Чтобы закончить шифрование напишите end")
 print("В начале шифра добовляется 000 и в конце")
 print("После каждой буквы идёт цыфра 2")
-asd = 000
+asd = '000'
 str(asd)
-st = 000
+st = '000'
 str(st)
-two = 2
+two = '2'
 str(two)
 while 2 == 2:
     a = input("Назовите букву:")
     if a == "а":
-        aa = 1
-        aa = True
-        str(aa)
+        aa = '1'
+        # aa = True
+        # str(aa)
         st = st + aa + two
-        aa = False
-        
+        # aa = False
+
     elif a == "б":
         bb = 10
         bb = True
@@ -24,7 +24,7 @@ while 2 == 2:
         st = st + bb + two
         bb = False
     elif a == "в":
-        vv = 11
+        vv = a
         vv = True
         str(vv)
         st = st + vv + two
@@ -174,7 +174,7 @@ while 2 == 2:
         st = st + sha + two
         sha = False
     elif a == "ъ":
-        tverd = 11100 
+        tverd = 11100
         tverd = True
         str(tverd)
         st = st + tverd + two
