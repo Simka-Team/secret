@@ -16,3 +16,7 @@ for i in range(len(lst_input_list)):
         str_output_letter = ''
     str_output_str = str_output_str + str_output_letter
 print(str_output_str)
+
+# test push and merge
+
+print ("First merge from qwerty 2 master")
