@@ -110,7 +110,7 @@ elif lan == "Russian":
             ggg = "100"
             st = st + ggg + two
         elif a == "д":
-            dd = "101"
+            ddd = "101"
             st = st + ddd + two
         elif a == "е":
             ye = "110"
