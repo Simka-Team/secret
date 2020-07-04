@@ -1,4 +1,9 @@
 import random
+import re 
+
+def hascyr(s):
+    lower = set('абвгдеёжзийклмнопрстуфхцчшщъыьэюя')
+    return lower.intersection(s.lower()) != set()
 
 words_bank = ['автострада', 'бензин']
 
@@ -22,12 +27,16 @@ while True:
     letter = input('введите одну русскую букву ').lower()
     # TODO letter validation
     if len(letter) != 1:
+        print('не одна буква')
+        continue
+    if not hascyr(letter):
+        print(f'не русская буква {letter}')
         continue
     if letter in secret_word:
-        pass
+        pass # TODO add work arround
     else:
         #pass
-        print(f'ошибок допущено', errors_counter)
+        print(f'ошибок было допущено {errors_counter}')
         errors_counter += 1
     print('вы ввели ', letter)
     if errors_counter > 3:
