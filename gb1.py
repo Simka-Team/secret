@@ -19,7 +19,7 @@ print(''.join(game_word))
 errors_counter = 0 
 
 while True:
-    letter = input('введите обну русскую букву ').lower()
+    letter = input('введите одну русскую букву ').lower()
     # TODO letter validation
     if len(letter) != 1:
         continue
@@ -28,4 +28,8 @@ while True:
     else:
         #pass
         print(f'ошибок допущено', errors_counter)
+        errors_counter += 1
     print('вы ввели ', letter)
+    if errors_counter > 3:
+        print(f"haha you are louser with {errors_counter} errors")
+        break
